@@ -1,0 +1,38 @@
+{
+  "name": "finder-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "dev": "nodemon src/server.js",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdouglasmorais/finder-api.git"
+  },
+  "keywords": [],
+  "author": "Douglas Morais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrdouglasmorais/finder-api/issues"
+  },
+  "homepage": "https://github.com/mrdouglasmorais/finder-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelice-query": "^1.0.3",
+    "sequelize": "^6.21.2",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18",
+    "sequelize-cli": "^6.4.1",
+    "sucrase": "^3.23.0"
+  }
+}
